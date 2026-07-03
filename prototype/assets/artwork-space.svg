@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" role="img" aria-label="儿童太空主题画作">
+  <rect width="640" height="460" fill="#1f2937"/>
+  <g fill="#fff7b8">
+    <circle cx="74" cy="70" r="5"/>
+    <circle cx="168" cy="112" r="4"/>
+    <circle cx="252" cy="62" r="6"/>
+    <circle cx="436" cy="83" r="5"/>
+    <circle cx="551" cy="132" r="4"/>
+    <circle cx="593" cy="50" r="6"/>
+    <circle cx="396" cy="178" r="4"/>
+    <circle cx="111" cy="201" r="5"/>
+  </g>
+  <circle cx="505" cy="297" r="92" fill="#7dd3c7" stroke="#e5f7f4" stroke-width="7"/>
+  <path d="M418 295 C472 271 531 273 590 309" fill="none" stroke="#f6c85f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M221 318 C172 276 160 205 204 154 C228 126 256 111 284 105 C288 137 280 171 257 203 C319 205 361 236 379 288 C333 309 278 319 221 318 Z" fill="#f26d5b" stroke="#fff2d6" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M205 261 l-68 45 l78 13" fill="#5fb6c6" stroke="#fff2d6" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M306 205 l63 -50 l-14 83" fill="#5fb6c6" stroke="#fff2d6" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="266" cy="174" r="24" fill="#dff7ff" stroke="#243447" stroke-width="6"/>
+  <path d="M190 324 q-41 39 -86 44 q36 -38 78 -58" fill="#ffd166" stroke="#fff2d6" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M67 378 q28 -28 66 -47" fill="none" stroke="#f26d5b" stroke-width="8" stroke-linecap="round"/>
+</svg>
+

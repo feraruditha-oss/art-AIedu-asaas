@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="460" viewBox="0 0 640 460" role="img" aria-label="儿童动物主题画作">
+  <rect width="640" height="460" fill="#fff9ed"/>
+  <path d="M0 345 C80 305 141 350 222 324 C301 298 360 340 432 312 C512 281 577 303 640 276 L640 460 L0 460 Z" fill="#b7df9b"/>
+  <circle cx="94" cy="91" r="42" fill="#ffcf5a"/>
+  <g stroke="#2f3136" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="330" cy="255" rx="112" ry="78" fill="#f4a261"/>
+    <circle cx="240" cy="211" r="58" fill="#f4a261"/>
+    <path d="M206 172 L187 114 L236 151" fill="#f4a261"/>
+    <path d="M261 166 L284 111 L297 176" fill="#f4a261"/>
+    <circle cx="220" cy="203" r="8" fill="#111827"/>
+    <circle cx="263" cy="202" r="8" fill="#111827"/>
+    <path d="M239 219 q10 14 25 0" fill="none"/>
+    <path d="M246 232 q-20 24 -48 12" fill="none"/>
+    <path d="M252 232 q22 22 50 9" fill="none"/>
+    <path d="M285 320 L268 390" fill="#f4a261"/>
+    <path d="M355 326 L359 394" fill="#f4a261"/>
+    <path d="M410 238 q72 -58 98 8 q-46 1 -76 37" fill="none"/>
+  </g>
+  <g fill="none" stroke="#4fb3a5" stroke-width="8" stroke-linecap="round">
+    <path d="M72 360 q21 -50 48 0"/>
+    <path d="M520 370 q25 -66 53 0"/>
+    <path d="M562 358 q18 -40 39 2"/>
+  </g>
+  <g fill="#f26d5b">
+    <circle cx="116" cy="336" r="9"/>
+    <circle cx="575" cy="337" r="9"/>
+    <circle cx="601" cy="346" r="7"/>
+  </g>
+</svg>
+
