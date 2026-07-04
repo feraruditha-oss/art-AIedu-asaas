@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>art-AIedu-asaas 原型</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="主导航">
+        <div class="brand">
+          <span class="brand-mark">AI</span>
+          <div>
+            <strong>art-AIedu</strong>
+            <span>艺术机构增长系统</span>
+          </div>
+        </div>
+        <nav class="nav-list">
+          <button class="nav-item active" data-view="dashboard" type="button">
+            <span class="icon">□</span><span>数据看板</span>
+          </button>
+          <button class="nav-item" data-view="acquisition" type="button">
+            <span class="icon">◈</span><span>获客活动</span>
+          </button>
+          <button class="nav-item" data-view="content" type="button">
+            <span class="icon">▶</span><span>短视频获客</span>
+          </button>
+          <button class="nav-item" data-view="assessment" type="button">
+            <span class="icon">＋</span><span>少儿测评</span>
+          </button>
+          <button class="nav-item" data-view="report" type="button">
+            <span class="icon">◎</span><span>测评报告</span>
+          </button>
+          <button class="nav-item" data-view="booking" type="button">
+            <span class="icon">◇</span><span>试听预约</span>
+          </button>
+          <button class="nav-item" data-view="leads" type="button">
+            <span class="icon">≡</span><span>线索后台</span>
+          </button>
+        </nav>
+        <div class="trial-box">
+          <span>试点版</span>
+          <strong>5 家机构验证中</strong>
+          <small>少儿、成人、异业收入闭环</small>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">艺术教培 AI 增长系统</p>
+            <h1 id="viewTitle">数据看板</h1>
+          </div>
+          <div class="top-actions">
+            <button class="ghost-btn" type="button">导出数据</button>
+            <button class="primary-btn" data-go="acquisition" type="button">创建活动</button>
+          </div>
+        </header>
+
+        <section class="view active" id="dashboard">
+          <div class="metric-grid">
+            <article class="metric">
+              <span>本周内容</span>
+              <strong>42</strong>
+              <small>比上周 +18%</small>
+            </article>
+            <article class="metric">
+              <span>获客线索</span>
+              <strong>126</strong>
+              <small>测评、活动、异业合作</small>
+            </article>
+            <article class="metric">
+              <span>体验预约</span>
+              <strong>31</strong>
+              <small>少儿 19，成人 8，企业 4</small>
+            </article>
+            <article class="metric">
+              <span>预计收入</span>
+              <strong>¥68k</strong>
+              <small>课程 + 沙龙 + 团建</small>
+            </article>
+          </div>
+
+          <div class="dashboard-grid">
+            <section class="panel">
+              <div class="panel-head">
+                <h2>招生漏斗</h2>
+                <span>本周</span>
+              </div>
+              <div class="funnel">
+                <div style="--w: 100%"><span>内容触达</span><strong>8,420</strong></div>
+                <div style="--w: 76%"><span>进入活动页</span><strong>438</strong></div>
+                <div style="--w: 52%"><span>提交表单/作品</span><strong>126</strong></div>
+                <div style="--w: 34%"><span>预约体验</span><strong>31</strong></div>
+                <div style="--w: 18%"><span>课程/活动成交</span><strong>12</strong></div>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-head">
+                <h2>高转化内容</h2>
+                <span>Top 3</span>
+              </div>
+              <div class="content-rank">
+                <article>
+                  <img src="./assets/student-panda-courtyard.jpg" alt="熊猫庭院主题学生作品" />
+                  <div>
+                    <strong>高阶创作：一张画看出叙事、构图和文化表达</strong>
+                    <span>带来 26 条测评线索</span>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/student-red-city.jpg" alt="红色城市主题学生作品" />
+                  <div>
+                    <strong>低龄孩子画面很乱？其实是在讲故事</strong>
+                    <span>带来 19 条测评线索</span>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/student-night-guardians.jpg" alt="夜色守护主题学生作品" />
+                  <div>
+                    <strong>灯光、人物和情绪：美术课培养的不只是技巧</strong>
+                    <span>带来 15 条测评线索</span>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="acquisition">
+          <div class="section-intro">
+            <div>
+              <p class="eyebrow">多入口获客活动中心</p>
+              <h2>把家长、成人学员、老年兴趣班和异业合作都变成可创建的活动</h2>
+            </div>
+            <button class="primary-btn" type="button">一键生成活动页</button>
+          </div>
+
+          <div class="segment-row">
+            <button class="chip active" type="button">少儿招生</button>
+            <button class="chip" type="button">成人美术</button>
+            <button class="chip" type="button">老年兴趣</button>
+            <button class="chip" type="button">异业合作</button>
+            <button class="chip" type="button">企业活动</button>
+          </div>
+
+          <div class="activity-grid">
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag child">少儿</span>
+                <strong>绘画潜能倾向测评</strong>
+              </div>
+              <p>用作品分析观察力、表达欲、色彩敏感度和想象力，承接家长“孩子有没有天赋”的需求。</p>
+              <ul>
+                <li>生成 H5 测评页</li>
+                <li>生成家长报告</li>
+                <li>推荐试听课程</li>
+              </ul>
+              <button class="ghost-btn full" data-go="assessment" type="button">创建少儿测评</button>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag child">少儿</span>
+                <strong>色彩感知测评</strong>
+              </div>
+              <p>围绕色感、配色习惯、情绪表达生成报告，适合小红书和朋友圈引流。</p>
+              <ul>
+                <li>生成色彩敏感度分析</li>
+                <li>输出老师点评话术</li>
+                <li>引导创意色彩体验课</li>
+              </ul>
+              <button class="ghost-btn full" data-activity="child" type="button">生成活动素材</button>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag child">少儿</span>
+                <strong>创作力挑战</strong>
+              </div>
+              <p>用主题挑战吸引家长提交作品，比如“如果动物开了一家店”“未来城市”。</p>
+              <ul>
+                <li>生成主题挑战页</li>
+                <li>分析故事性和联想力</li>
+                <li>沉淀作品案例库</li>
+              </ul>
+              <button class="ghost-btn full" data-activity="child" type="button">创建挑战活动</button>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag child">少儿</span>
+                <strong>专注力观察测评</strong>
+              </div>
+              <p>用绘画完成度、持续时间和课堂表现承接“提升专注度”的需求，但避免承诺效果。</p>
+              <ul>
+                <li>生成观察问卷</li>
+                <li>输出专注表现建议</li>
+                <li>推荐小班体验课</li>
+              </ul>
+              <button class="ghost-btn full" data-activity="child" type="button">创建观察表</button>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag adult">成人</span>
+                <strong>成人美术学习规划</strong>
+              </div>
+              <p>面向零基础成人、宝妈、白领，生成水彩、油画、素描、插画等学习路径。</p>
+              <ul>
+                <li>兴趣和目标问卷</li>
+                <li>推荐课程路径</li>
+                <li>预约成人体验课</li>
+              </ul>
+              <button class="ghost-btn full" data-activity="adult" type="button">创建规划入口</button>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag elder">银发</span>
+                <strong>退休生活艺术兴趣课</strong>
+              </div>
+              <p>面向老年人学习国画、水彩、书画疗愈、社交兴趣班，拓宽非少儿时段收入。</p>
+              <ul>
+                <li>生成体验课招募页</li>
+                <li>适配社区渠道文案</li>
+                <li>生成家属转发话术</li>
+              </ul>
+              <button class="ghost-btn full" data-activity="elder" type="button">创建银发课程</button>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag partner">异业</span>
+                <strong>本地异业合作入口</strong>
+              </div>
+              <p>连接书店、咖啡馆、儿童摄影、绘本馆、社区和商场，生成联合活动方案。</p>
+              <ul>
+                <li>生成合作提案</li>
+                <li>生成联合海报文案</li>
+                <li>记录合作线索和分成</li>
+              </ul>
+              <button class="ghost-btn full" data-activity="adult" type="button">生成合作方案</button>
+            </article>
+
+            <article class="activity-card">
+              <div class="activity-top">
+                <span class="tag company">企业</span>
+                <strong>公司年会艺术体验</strong>
+              </div>
+              <p>为企业团建、年会、女神节、亲子日生成艺术体验方案，提高机构非课包收入。</p>
+              <ul>
+                <li>生成企业活动报价</li>
+                <li>生成团建流程</li>
+                <li>生成销售跟进话术</li>
+              </ul>
+              <button class="ghost-btn full" data-activity="company" type="button">创建企业活动</button>
+            </article>
+          </div>
+
+          <section class="panel calendar-panel">
+            <div class="panel-head">
+              <h2>月度获客排期</h2>
+              <span>让机构每周都有入口可发</span>
+            </div>
+            <div class="calendar-grid">
+              <article><strong>第 1 周</strong><span>绘画潜能测评 + 小红书种草</span></article>
+              <article><strong>第 2 周</strong><span>色彩感知挑战 + 朋友圈作品海报</span></article>
+              <article><strong>第 3 周</strong><span>成人水彩沙龙 + 社区/咖啡馆合作</span></article>
+              <article><strong>第 4 周</strong><span>亲子艺术工坊 + 企业团建提案</span></article>
+            </div>
+          </section>
+        </section>
+
+        <section class="view" id="content">
+          <div class="work-grid">
+            <section class="panel form-panel">
+              <div class="panel-head">
+                <h2>短视频获客</h2>
+                <span>老师拍完就能发</span>
+              </div>
+              <div class="video-upload-card">
+                <div class="phone-frame">
+                  <img src="./assets/student-panda-courtyard.jpg" alt="课堂随手拍视频封面预览" />
+                  <span>00:18</span>
+                </div>
+                <div>
+                  <strong>上传课堂随手拍视频</strong>
+                  <p>建议 10-30 秒：孩子作画、老师指导、作品展示、课堂氛围都可以。</p>
+                  <button class="ghost-btn small" type="button">选择视频</button>
+                </div>
+              </div>
+              <label>课程主题<input id="topicInput" value="熊猫庭院主题创作" /></label>
+              <label>学生年龄段
+                <select id="ageSelect">
+                  <option>3-4 岁</option>
+                  <option>5-6 岁</option>
+                  <option>7-8 岁</option>
+                  <option selected>9-12 岁</option>
+                  <option>成人</option>
+                  <option>退休人群</option>
+                  <option>企业团队</option>
+                </select>
+              </label>
+              <label>成片类型
+                <select id="videoTypeSelect">
+                  <option selected>老师理念口播型</option>
+                  <option>课堂氛围记录型</option>
+                  <option>作品展示点评型</option>
+                  <option>家长痛点引导型</option>
+                  <option>招生体验转化型</option>
+                </select>
+              </label>
+              <label>发布平台
+                <select id="platformSelect">
+                  <option selected>小红书</option>
+                  <option>抖音</option>
+                  <option>视频号</option>
+                  <option>朋友圈</option>
+                </select>
+              </label>
+              <label>本地招生半径
+                <select>
+                  <option selected>校区周边 3 公里</option>
+                  <option>校区周边 5 公里</option>
+                  <option>同城亲子家庭</option>
+                  <option>指定商圈/社区</option>
+                </select>
+              </label>
+              <label>本地关键词<input value="滨江区、亲子、美术启蒙、周末体验课" /></label>
+              <label>视频里最值得讲的一点<textarea id="highlightInput">孩子在创作时主动安排了熊猫角色、庭院空间和桌面活动，老师现场引导他把故事讲得更清楚。</textarea></label>
+              <button class="primary-btn full" id="generateContent" type="button">生成短视频发布包</button>
+              <div class="engine-stats">
+                <article><strong>3步</strong><span>拍摄 上传 发布</span></article>
+                <article><strong>4端</strong><span>抖音 小红书 视频号 朋友圈</span></article>
+                <article><strong>30秒</strong><span>课堂素材变发布包</span></article>
+              </div>
+            </section>
+            <section class="panel output-panel">
+              <div class="panel-head">
+                <h2>短视频发布包</h2>
+                <button class="ghost-btn small" type="button">复制</button>
+              </div>
+              <div class="quality-row">
+                <article><span>素材可用</span><strong>高</strong></article>
+                <article><span>口播自然</span><strong>88</strong></article>
+                <article><span>平台适配</span><strong>92</strong></article>
+                <article><span>转化强度</span><strong>85</strong></article>
+              </div>
+              <div class="video-flow">
+                <article>
+                  <strong>剪辑节奏</strong>
+                  <span>作品开场 2 秒 → 老师指导 → 孩子作画细节 → 完整作品收尾</span>
+                </article>
+                <article>
+                  <strong>自动处理</strong>
+                  <span>裁成竖屏、加字幕条、封面大字、轻音乐、同城话题</span>
+                </article>
+              </div>
+              <div class="output-block">
+                <span>封面标题</span>
+                <strong id="contentTitle">孩子画得满，不一定是乱，可能是在讲故事</strong>
+              </div>
+              <div class="output-block compact">
+                <span>成片结构</span>
+                <p>0-3 秒：直接给完整作品和一句钩子。</p>
+                <p>4-12 秒：放大孩子作画细节，字幕讲老师观察。</p>
+                <p>13-22 秒：老师理念口播，解释为什么这不是简单画得像。</p>
+                <p>23-30 秒：展示作品收尾，温和引导附近家长预约体验。</p>
+              </div>
+              <div class="output-block">
+                <span>老师口播</span>
+                <p id="contentBody">很多家长看到孩子画得很满，会担心是不是太乱了。但在美术课里，我们会先看孩子有没有在组织画面。像这张作品，孩子已经在安排角色、场景和故事，这是很珍贵的创作信号。下一步要做的不是急着改，而是帮他学会主次、空间和表达顺序。</p>
+              </div>
+              <div class="platform-logic">
+                <article><strong>小红书</strong><span>封面作品 + 老师拆解 + 家长共鸣标题</span></article>
+                <article><strong>抖音</strong><span>前 3 秒作品冲击 + 快字幕 + 同城体验</span></article>
+                <article><strong>视频号</strong><span>真实课堂 + 老师信任 + 家长转发感</span></article>
+              </div>
+              <div class="output-block compact">
+                <span>发布文案</span>
+                <p>今天课堂里有个细节很打动老师：孩子不是在随便把画面填满，而是在努力把一个故事讲完整。</p>
+                <p>滨江区附近的家长，如果孩子也喜欢画故事型作品，可以带作品来体验课，让老师现场看看下一步怎么引导。</p>
+              </div>
+              <div class="output-block">
+                <span>字幕条</span>
+                <p>别急着说孩子画得乱。画面里东西多，有时说明他正在练习把想法组织起来。</p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="assessment">
+          <div class="work-grid">
+            <section class="panel form-panel">
+              <div class="panel-head">
+                <h2>少儿艺术测评页</h2>
+                <span>对外获客入口</span>
+              </div>
+              <label>孩子年龄<input value="5-6 岁" /></label>
+              <label>学画经历
+                <select>
+                  <option>没有系统学过</option>
+                  <option>学过 3 个月以内</option>
+                  <option selected>学过半年以上</option>
+                </select>
+              </label>
+              <label>家长关注点
+                <select>
+                  <option selected>想知道孩子是否适合学美术</option>
+                  <option>想提升专注力</option>
+                  <option>想培养审美和表达</option>
+                </select>
+              </label>
+              <label>联系方式<input value="微信/手机号" /></label>
+              <div class="upload-box">
+                <img src="./assets/student-red-city.jpg" alt="已上传红色城市主题学生作品" />
+                <span>已上传真实作品样例，公开演示前需确认授权</span>
+              </div>
+              <button class="primary-btn full" type="button">提交测评</button>
+            </section>
+            <section class="panel preview-panel">
+              <div class="panel-head">
+                <h2>家长看到的承诺</h2>
+                <span>不制造焦虑</span>
+              </div>
+              <div class="promise-list">
+                <article><strong>按年龄看阶段</strong><span>不同年龄的画面发展特点不同，不用成人标准简单评判。</span></article>
+                <article><strong>按五个维度拆解</strong><span>从色彩、线条、造型、构图、画面组织分析孩子的表达方式。</span></article>
+                <article><strong>同步给体验课老师</strong><span>报告会进入老师端，试听时重点观察孩子的表达、专注和引导反应。</span></article>
+              </div>
+              <div class="sample-strip">
+                <img src="./assets/student-red-city.jpg" alt="红色城市主题学生作品" />
+                <img src="./assets/student-shape-kingdom.jpg" alt="形状王国主题学生作品" />
+                <img src="./assets/student-panda-courtyard.jpg" alt="熊猫庭院主题学生作品" />
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="report">
+          <div class="report-layout">
+            <section class="panel artwork-panel report-hero">
+              <img src="./assets/student-panda-courtyard.jpg" alt="熊猫庭院主题学生作品报告样例" />
+              <div>
+                <span class="report-badge">少儿艺术测评报告</span>
+                <h2>这个孩子已经不只是“会画”，而是在组织一个完整故事</h2>
+                <p>9-12 岁 · 熊猫庭院主题创作</p>
+                <div class="hero-tags" aria-label="测评标签">
+                  <span>构图突出</span>
+                  <span>故事感强</span>
+                  <span>细节耐心好</span>
+                  <span>适合高阶创作</span>
+                </div>
+                <div class="parent-summary">
+                  <strong>给家长的结论</strong>
+                  <span>孩子已经能把人物、建筑、植物和活动放进同一幅画里，说明他正在从“画单个东西”进入“搭建完整画面”的阶段。下一步最值得训练的是主次取舍、空间关系和角色动态。</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel age-analysis">
+              <div class="panel-head">
+                <h2>年龄阶段判断</h2>
+                <span>9-12 岁参考</span>
+              </div>
+              <div class="age-points">
+                <article><strong>现在看什么</strong><span>不只看像不像，要看孩子会不会安排空间和故事。</span></article>
+                <article><strong>这张画说明</strong><span>孩子已经能处理前景、中景、背景和角色关系。</span></article>
+                <article><strong>下一步学什么</strong><span>主次取舍、角色动态、空间稳定和画面节奏。</span></article>
+              </div>
+            </section>
+
+            <section class="report-grid detailed">
+              <article class="score-card"><span>色彩</span><strong>对比清楚</strong><p>红墙、绿地、粉花和黑白熊猫一眼能分清。孩子已经会用颜色区分主体和环境。</p></article>
+              <article class="score-card"><span>线条</span><strong>愿意刻画</strong><p>毛发、瓦片、窗格都有细节，说明孩子有耐心，也愿意观察。</p></article>
+              <article class="score-card"><span>造型</span><strong>角色有区分</strong><p>不同熊猫有服饰、姿态和身份，不是重复画同一个形象。</p></article>
+              <article class="score-card"><span>构图</span><strong>空间感强</strong><p>庭院视角完整，有前景、中景和背景，画面不是简单平铺。</p></article>
+              <article class="score-card wide highlight-card"><span>画面组织</span><strong>已经有“主题创作”能力</strong><p>这张画有环境、有角色、有活动，孩子在讲一个完整场景。下一步适合训练故事线、主次关系和画面节奏。</p></article>
+              <article class="score-card wide teacher-card"><span>老师同步</span><strong>体验课会接着看这 4 点</strong><p>是否先构思再下笔；能否听懂构图建议；细节刻画能否保持专注；复杂主题里能否主动取舍。</p></article>
+            </section>
+
+            <section class="panel recommendation">
+              <div>
+                <h2>推荐课程：高阶主题创作课</h2>
+                <p>让孩子把“画得丰富”继续提升成“主次清楚、空间稳定、故事完整”。</p>
+              </div>
+              <button class="primary-btn" data-go="booking" type="button">预约试听</button>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="booking">
+          <div class="work-grid">
+            <section class="panel form-panel">
+              <div class="panel-head">
+                <h2>试听预约</h2>
+                <span>测评后的转化动作</span>
+              </div>
+              <label>推荐课程<input value="高阶主题创作课" /></label>
+              <label>选择校区
+                <select>
+                  <option selected>滨江校区</option>
+                  <option>城西校区</option>
+                  <option>湖滨校区</option>
+                </select>
+              </label>
+              <label>预约时间
+                <select>
+                  <option selected>周六 10:00</option>
+                  <option>周六 15:00</option>
+                  <option>周日 10:00</option>
+                </select>
+              </label>
+              <label>备注<textarea>希望老师现场观察孩子的画面组织能力、细节处理和主题表达完整度。</textarea></label>
+              <button class="primary-btn full" type="button">确认预约</button>
+            </section>
+            <section class="panel success-card">
+              <div class="status-dot"></div>
+              <h2>预约成功</h2>
+              <p>系统已把测评报告、孩子作品和推荐话术同步给负责老师。</p>
+              <dl>
+                <div><dt>试听时间</dt><dd>周六 10:00</dd></div>
+                <div><dt>校区</dt><dd>滨江校区</dd></div>
+                <div><dt>负责老师</dt><dd>林老师</dd></div>
+              </dl>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="leads">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>老师线索后台</h2>
+              <div class="filters">
+                <button class="chip" type="button">新线索</button>
+                <button class="chip active" type="button">已预约</button>
+                <button class="chip" type="button">已到店</button>
+              </div>
+            </div>
+            <div class="booked-student">
+              <div class="booked-artwork">
+                <img src="./assets/student-panda-courtyard.jpg" alt="已预约学生熊猫庭院主题作品" />
+                <span>已预约 · 周六 10:00 · 林老师</span>
+              </div>
+              <div class="booked-main">
+                <div class="booked-head">
+                  <div>
+                    <h3>9-12 岁 · 熊猫庭院主题创作</h3>
+                    <p>推荐课程：高阶主题创作课</p>
+                  </div>
+                  <button class="primary-btn small" data-go="report" type="button">查看完整报告</button>
+                </div>
+                <div class="teacher-summary">
+                  <strong>课前测评结论</strong>
+                  <span>孩子已经能把人物、建筑、植物和活动组织成完整场景，构图和叙事能力突出。试听课重点观察：是否能先构思再下笔，能否接受构图调整建议。</span>
+                </div>
+                <div class="ability-chart" aria-label="孩子五维能力水平">
+                  <div class="ability-row" style="--level: 82%">
+                    <span>色彩</span>
+                    <div><i></i></div>
+                    <strong>82</strong>
+                  </div>
+                  <div class="ability-row" style="--level: 78%">
+                    <span>线条</span>
+                    <div><i></i></div>
+                    <strong>78</strong>
+                  </div>
+                  <div class="ability-row" style="--level: 76%">
+                    <span>造型</span>
+                    <div><i></i></div>
+                    <strong>76</strong>
+                  </div>
+                  <div class="ability-row" style="--level: 90%">
+                    <span>构图</span>
+                    <div><i></i></div>
+                    <strong>90</strong>
+                  </div>
+                  <div class="ability-row" style="--level: 88%">
+                    <span>画面组织</span>
+                    <div><i></i></div>
+                    <strong>88</strong>
+                  </div>
+                </div>
+                <div class="teacher-tasks">
+                  <article><strong>开场提问</strong><span>让孩子讲一讲画里的故事，观察表达主动性。</span></article>
+                  <article><strong>课堂观察</strong><span>看孩子是否能先定主体，再安排背景和细节。</span></article>
+                  <article><strong>跟进话术</strong><span>孩子已经具备主题创作基础，建议体验系统课继续提升画面主次和空间稳定。</span></article>
+                </div>
+              </div>
+            </div>
+            <div class="lead-list">
+              <article class="lead-row">
+                <img src="./assets/student-panda-courtyard.jpg" alt="熊猫庭院主题作品缩略图" />
+                <div>
+                  <strong>9-12 岁 · 熊猫庭院主题创作</strong>
+                  <span>来源：小红书 · 推荐：高阶主题创作课</span>
+                </div>
+                <p>构图和叙事能力较强，建议邀约试听，重点沟通高阶创作路径。</p>
+                <button class="ghost-btn small" type="button">复制话术</button>
+              </article>
+              <article class="lead-row">
+                <img src="./assets/student-night-guardians.jpg" alt="夜色守护主题作品缩略图" />
+                <div>
+                  <strong>9-12 岁 · 夜色守护主题创作</strong>
+                  <span>来源：视频号 · 推荐：水彩光影课</span>
+                </div>
+                <p>光影氛围和人物关系明确，适合引导家长了解专业表现力训练。</p>
+                <button class="ghost-btn small" type="button">复制话术</button>
+              </article>
+              <article class="lead-row">
+                <img src="./assets/student-red-city.jpg" alt="红色城市主题作品缩略图" />
+                <div>
+                  <strong>5-6 岁 · 红色城市主题创作</strong>
+                  <span>来源：朋友圈 · 推荐：创意表达启蒙课</span>
+                </div>
+                <p>符号、数字和角色表达活跃，建议保护表达欲并引导画面秩序。</p>
+                <button class="ghost-btn small" type="button">复制话术</button>
+              </article>
+              <article class="lead-row">
+                <img src="./assets/student-shape-kingdom.jpg" alt="形状王国主题作品缩略图" />
+                <div>
+                  <strong>6-8 岁 · Shape Kingdom 主题创作</strong>
+                  <span>来源：小红书 · 推荐：综合材料创意课</span>
+                </div>
+                <p>色彩明快，形状组合丰富，公开展示前建议确认作品署名授权。</p>
+                <button class="ghost-btn small" type="button">复制话术</button>
+              </article>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
